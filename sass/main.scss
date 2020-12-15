@@ -1,0 +1,102 @@
+// VARIABLES
+$htmlBackground: #293241;
+$navBackground: #EE6C4D;
+$headerBackground: #3d5a80;
+$mainTextColor: #e0fbfc;
+
+// BASE CSS
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    background-color: $htmlBackground;
+    font-size: 12px;
+}
+// NAVIGATION
+.nav-wrapper{
+    background-color: $navBackground;
+}
+.navItems{
+    display: flex;
+    justify-content: center;
+}
+.navItems > li{
+    margin-left: 10%;
+}
+.navItems:nth-child(1){
+    // NEGATIVE MARGIN ON FIRST CHILD TO MAKE FOR MARGIN ON LINE 25
+    // WILL KEEP NAV ITEMS CENTERED
+    margin-left: -10%;
+}
+.navItems > li > a{
+    font-family: 'Raleway', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+// Header
+#header {
+    min-height: 40vh;
+    background-color: $headerBackground;
+}
+#header > .container {
+    max-width: 80vw;
+    text-align: center;
+    font-family: 'Raleway', sans-serif, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: $mainTextColor;
+
+}
+.subTitle{
+    font-size: 1.5rem;
+}
+.headshot{
+    height: auto;
+    width: 50%;
+    border-radius: 50%;
+    margin-top: 2rem;
+}
+// Content Home page
+
+.techImg{
+    width: 70%;
+    border-radius: 10%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+}
+.techDescription{
+    text-align: center;
+    margin-top: 3rem;
+}
+.page-footer{
+    background-color: $navBackground;
+}
+
+//  content portfolio page
+
+.card{
+    margin-top: 3.5rem;
+}
+
+// media queries
+
+//HOME PAGE
+@media screen and (min-width: 768px){
+    //TABLET
+    .headshot{
+        width: 80%;
+    }
+    .techDescription{
+        margin-top: 6rem;
+        font-size: 1.2rem;
+    }
+}
+@media screen and (min-width: 1300px){
+    //DESKTOP
+    .headshot{
+        width: 80%;
+        margin-top: .5rem;
+    }
+    .title{
+        padding-top: 10rem;
+    }
+}
